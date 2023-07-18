@@ -1,6 +1,6 @@
 #include "Page.h"
 
-Page::Page()
+Page::Page(User& user)
 {
 	
 }
@@ -8,4 +8,10 @@ Page::Page()
 Page::~Page()
 {
 }
+
+void Page::GetUserOption(std::string userInput)
+{
+
+}
+
 

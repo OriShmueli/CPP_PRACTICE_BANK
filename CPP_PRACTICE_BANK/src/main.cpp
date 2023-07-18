@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <stdexcept>
 
 using namespace std;
 
@@ -96,17 +97,19 @@ using namespace std;
 /// </summary>
 /// <returns>
 /// </returns>
-template<typename T>
-void print(const T& value) {
-	cout << value << endl;
-}
-
-template<typename T>
-void doSomeThing(const T& t) {
-	
-}
 
 int main() {
+
+	while (true)
+	{
+		std::string commend;
+		cin >> commend;
+		std::cout << "Commend: " << commend << endl;
+		if (commend == "e") {
+			break;
+		}
+	}
+	
 
 	return 0;
 }   

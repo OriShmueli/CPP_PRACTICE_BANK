@@ -127,19 +127,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Util\States\AdminState.cpp" />
+    <ClCompile Include="src\Util\States\BaseState.cpp" />
+    <ClCompile Include="src\Util\States\LogInState.cpp" />
+    <ClCompile Include="src\Util\States\SignInState.cpp" />
+    <ClCompile Include="src\UI\Pages\MainPage.cpp" />
     <ClCompile Include="src\DataBase\User_Types\Admin.cpp" />
     <ClCompile Include="src\Util\History.cpp" />
     <ClCompile Include="src\UI\Page.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Util\UserStateMachine.cpp" />
     <ClCompile Include="src\DataBase\User_Types\User.cpp" />
+    <ClCompile Include="src\Util\States\UserState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Util\States\AdminState.h" />
+    <ClInclude Include="src\Util\States\BaseState.h" />
+    <ClInclude Include="src\Util\States\LogInState.h" />
+    <ClInclude Include="src\Util\States\SignInState.h" />
+    <ClInclude Include="src\UI\Pages\MainPage.h" />
     <ClInclude Include="src\DataBase\User_Types\Admin.h" />
     <ClInclude Include="src\Util\History.h" />
     <ClInclude Include="src\UI\Page.h" />
     <ClInclude Include="src\Util\UserStateMachine.h" />
     <ClInclude Include="src\DataBase\User_Types\User.h" />
+    <ClInclude Include="src\Util\States\UserState.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\DataBase\UsersData\Admin\Admin.txt" />
