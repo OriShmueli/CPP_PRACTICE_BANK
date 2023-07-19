@@ -1,8 +1,8 @@
 #include "UserStateMachine.h"
 
-UserStateMachine::UserStateMachine(BaseState* startingState) : _currentState(nullptr)
+UserStateMachine::UserStateMachine() : _currentState(nullptr), _currentUserTypeAndData(nullptr), _history(nullptr)
 {
-
+	ChangeState(new MainPageState);
 }
 
 UserStateMachine::~UserStateMachine()
@@ -26,11 +26,18 @@ History* UserStateMachine::GetHistory()
 }
 
 void UserStateMachine::ChangeState(BaseState* newState)
-{
-	if (_currentState != nullptr) {
-		delete _currentState;
+{	
+	if (_history != nullptr) {
+		
+		delete _history;
 	}
 
+	if (_currentState != nullptr) {
+		_currentState->ExitState();
+		delete _currentState;
+	}
+	_history = new History();
 	_currentState = newState;
 	_currentState->SetStateMachine(this);
+	_currentState->EnterState();
 }

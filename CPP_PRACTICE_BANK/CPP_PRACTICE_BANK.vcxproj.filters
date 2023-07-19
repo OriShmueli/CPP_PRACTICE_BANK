@@ -51,6 +51,9 @@
     <ClCompile Include="src\Util\States\AdminState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Util\States\MainPageState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Util\UserStateMachine.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Util\States\AdminState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\States\MainPageState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

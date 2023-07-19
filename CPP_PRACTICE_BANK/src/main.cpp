@@ -1,7 +1,8 @@
 #include <iostream>
 #include <memory>
 #include <stdexcept>
-
+#include "Util\UserStateMachine.h"
+#include "Util/States/MainPageState.h"
 using namespace std;
 
 /// <summary>
@@ -99,17 +100,18 @@ using namespace std;
 /// </returns>
 
 int main() {
+	
+	UserStateMachine* usm = new UserStateMachine();
 
 	while (true)
 	{
 		std::string commend;
 		cin >> commend;
 		std::cout << "Commend: " << commend << endl;
-		if (commend == "e") {
-			break;
-		}
+		usm->GetCurrentState()->GetUserInput(commend);
 	}
-	
+
+	delete usm;
 
 	return 0;
 }   

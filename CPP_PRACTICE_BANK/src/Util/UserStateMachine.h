@@ -3,11 +3,12 @@
 #include "States/BaseState.h"
 #include "../DataBase/User_Types/User.h"
 #include "History.h"
+#include "States/MainPageState.h"
 
 class UserStateMachine
 {
 public:
-	UserStateMachine(BaseState* startingState);
+	UserStateMachine();
 	~UserStateMachine();
 
 	BaseState* GetCurrentState();
