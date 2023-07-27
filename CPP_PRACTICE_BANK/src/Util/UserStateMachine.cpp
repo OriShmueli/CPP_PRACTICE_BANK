@@ -41,3 +41,13 @@ void UserStateMachine::ChangeState(BaseState* newState)
 	_currentState->SetStateMachine(this);
 	_currentState->EnterState();
 }
+
+const char* UserStateMachine::GetUserName()
+{
+	return _userName;
+}
+
+void UserStateMachine::SetUserName(const char* newUserName)
+{
+	_userName = newUserName;
+}

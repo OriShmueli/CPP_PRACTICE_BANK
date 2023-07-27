@@ -1,9 +1,9 @@
 #pragma once
 
 #include <iostream>
-#include "../../UI/Page.h"
-
+//#include "../../UI/Page.h"
 class UserStateMachine;
+class Page;
 
 class BaseState
 {
@@ -14,7 +14,8 @@ public:
 	virtual void EnterState() = 0;
 	virtual void GetUserInput(std::string userInput) = 0;
 	virtual void ChangePage(Page* page) = 0;
-protected: 
+	UserStateMachine* GetStateMachine();
+protected:
 	UserStateMachine* _context;
 	Page* _page;
 };

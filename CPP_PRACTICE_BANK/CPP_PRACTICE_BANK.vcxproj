@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\UI\Pages\LogIn\LogInPage.cpp" />
     <ClCompile Include="src\Util\States\MainPageState.cpp" />
     <ClCompile Include="src\Util\States\AdminState.cpp" />
     <ClCompile Include="src\Util\States\BaseState.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="src\Util\States\UserState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\UI\Pages\LogIn\LogInPage.h" />
     <ClInclude Include="src\Util\States\MainPageState.h" />
     <ClInclude Include="src\Util\States\AdminState.h" />
     <ClInclude Include="src\Util\States\BaseState.h" />

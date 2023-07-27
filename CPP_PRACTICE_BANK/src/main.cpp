@@ -106,8 +106,9 @@ int main() {
 	while (true)
 	{
 		std::string commend;
-		cin >> commend;
-		std::cout << "Commend: " << commend << endl;
+		std::cout << usm->GetUserName() << ">> ";
+		std::cin >> commend;
+		//std::cout << "Commend: " << commend << endl;
 		usm->GetCurrentState()->GetUserInput(commend);
 	}
 
