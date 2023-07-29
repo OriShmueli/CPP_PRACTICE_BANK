@@ -7,6 +7,7 @@ UserStateMachine::UserStateMachine() : _currentState(nullptr), _currentUserTypeA
 
 UserStateMachine::~UserStateMachine()
 {
+	std::cout << "deleted state machine" << std::endl;
 	delete _currentState;
 }
 

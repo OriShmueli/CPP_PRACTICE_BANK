@@ -16,7 +16,7 @@ public:
 	virtual void ChangePage(Page* page) = 0;
 	UserStateMachine* GetStateMachine();
 protected:
-	UserStateMachine* _context;
-	Page* _page;
+	UserStateMachine* _context = nullptr;
+	std::shared_ptr<Page> _page;
 };
 

@@ -7,14 +7,14 @@ MainPage::MainPage(User* user, BaseState* baseState) : Page(user, baseState)
 
 void MainPage::GetUserOption(std::string userInput)
 {
-	MainPageState* mainState = static_cast<MainPageState*>(_currentState);
-	if (userInput == "1") {
-		
+	MainPageState* mainState = dynamic_cast<MainPageState*>(_currentState);
+	if (userInput == "1") {		
+		//std::cout<< "GET_USER_POPTION()[LogInPage]" << typeid()
 		mainState->GetStateMachine()->ChangeState(new LogInState);
 	}
 
 	if(userInput == "2"){
-		
+		std::cout << "somwhing 2" << std::endl;
 	}
 	
 	if(userInput == "3"){

@@ -2,12 +2,13 @@
 
 void MainPageState::ExitState()
 {
-	delete _page;
+	std::cout << "deleted main page" << std::endl;
+	//delete _page;
 }
 
 void MainPageState::EnterState()
 {
-	_page = new MainPage(_context->GetUser(), this);
+	_page = std::make_shared<MainPage>(new MainPage(_context->GetUser(), this));
 }
 
 void MainPageState::GetUserInput(std::string userInput)

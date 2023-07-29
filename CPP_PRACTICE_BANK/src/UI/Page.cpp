@@ -8,8 +8,7 @@ Page::Page(User* user, BaseState* baseState)
 
 Page::~Page()
 {
-	system("cls");
-	
+	//system("cls");
 }
 
 void Page::GetUserOption(std::string userInput)
